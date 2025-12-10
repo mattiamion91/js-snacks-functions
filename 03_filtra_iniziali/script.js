@@ -27,3 +27,7 @@ console.log(extractNamesByLetter(names, "A"));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+//funzione arrow
+
+const extractInitial

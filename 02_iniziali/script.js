@@ -1,6 +1,6 @@
 /* Scrivi una funzione che accetti un array di nomi e restituisca nuovo un array con le iniziali di ogni parola dell'array fornito */
 
-const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
+const names = ["Anna", "Luca", "Marco", "adele", "Giovanni", "alessandra"];
 
 // Dichiara la funzione qui.
 
@@ -16,8 +16,11 @@ function extractInitial(myNames) {
         //normalizzo input, lo trasformo in una stringa
         const cleanName = String(currentName);
 
+        //normalizzo input, e metto tutto in minuscolo
+        const toUpperCase = currentName.toUpperCase()
+
         //estraggo la prima lettera
-        const firstLetter = cleanName[0];
+        const firstLetter = toUpperCase[0];
 
         //aggiungo la prima lettera all' array vuoto che ho creato
         initial.push(firstLetter);
